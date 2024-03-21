@@ -18,7 +18,11 @@ app.use(
   })
 );
 
-console.log(process.env.FRONTEND_URL);
+app.get("/", (req, res) => {
+  res.send("Home");
+});
+
+// console.log(process.env.FRONTEND_URL);
 
 app.use("/api/v1/message", messageRouter);
 dbConnection();
