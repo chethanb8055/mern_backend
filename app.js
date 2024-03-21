@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // Corrected port
+    origin: ["https://mern-simple.vercel.app/"], // Corrected port
     methods: ["POST"],
     credentials: true, // Corrected spelling
   })
